@@ -1,5 +1,11 @@
 # nvim configuration
 
+## install fuse
+
+```
+ yum install fuse3
+```
+
 ## install nvim
 ```
 chmod u+x nvim.appimage && ./nvim.appimage
