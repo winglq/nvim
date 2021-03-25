@@ -3,16 +3,19 @@
 ## install fuse
 
 ```
- yum install fuse3
+ yum install fuse*
 ```
 
 ## install nvim
 ```
 chmod u+x nvim.appimage && ./nvim.appimage
+ln -s ./nvim.appimage /usr/bin/nvim
 ```
 
 ## install node
 ```
+curl -sL https://rpm.nodesource.com/setup_15.x | sudo bash -
+sudo yum install -y nodejs
 npm install -g n
 n stable
 ```
@@ -44,6 +47,7 @@ go get github.com/mattn/efm-langserver
 ### ccls
 
 ```
+sudo yum install epel-release
 sudo yum install snapd
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
