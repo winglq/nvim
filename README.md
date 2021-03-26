@@ -29,11 +29,14 @@ Run following commands in nvim:
 
 ## go
 
-In $home/.bashrc add following exports
+In $home/.profile add following exports
 
 ```
 export PATH=$PATH:$(go env GOROOT)/bin
 export PATH=$PATH:$(go env GOPATH)/bin
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn
+
 ```
 
 ## install language server
@@ -52,4 +55,10 @@ sudo yum install snapd
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install ccls --classic
+```
+
+### update tmux
+
+```
+cp tmux.sample.conf $home/.tmux.conf
 ```
