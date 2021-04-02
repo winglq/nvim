@@ -47,6 +47,11 @@ export GOPROXY=https://goproxy.cn
 go get github.com/mattn/efm-langserver
 ```
 
+### Bash Language Server
+```
+npm i -g bash-language-server
+```
+
 ### ccls
 
 ```

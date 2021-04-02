@@ -12,7 +12,7 @@
     ],
     "languageserver": {
         "ccls": {
-            "command": "/var/lib/snapd/snap/ccls/48/bin/ccls",
+            "command": "/snap/bin/ccls",
             "filetypes": [
                 "c",
                 "cpp",
@@ -109,6 +109,12 @@
           // custom config path
           "args": ["-c", "/root/.config/nvim/efm.config.yaml"],
           "filetypes": ["vim", "eruby", "markdown", "yaml"]
-        }
+        },
+        "bash": {
+          "command": "bash-language-server",
+          "args": ["start"],
+          "filetypes": ["sh"],
+          "ignoredRootPaths": ["~"]
+         }
   }
 }

@@ -25,7 +25,7 @@ autocmd FileType python setlocal ts=4 sts=4 sw=4
 " color
 
 set t_Co=256
-colorscheme desert
+colorscheme solarized
 set colorcolumn=80
 set background=light
 
