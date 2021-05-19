@@ -19,8 +19,8 @@ autocmd FileType ruby setlocal ts=2 sts=2 sw=2
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 autocmd FileType python setlocal ts=4 sts=4 sw=4
 "these are for maxta
-"autocmd FileType cc setlocal tabstop=3 shiftwidth=3 expandtab
-"autocmd FileType c setlocal tabstop=3 shiftwidth=3 expandtab
+autocmd FileType cc setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
 
 " color
 

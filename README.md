@@ -47,6 +47,13 @@ export GOPROXY=https://goproxy.cn
 go get github.com/mattn/efm-langserver
 ```
 
+### ts/js
+
+In your vim/neovim, run command:
+```
+:CocInstall coc-tsserver
+```
+
 ### Bash Language Server
 ```
 npm i -g bash-language-server
