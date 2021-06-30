@@ -9,6 +9,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'liuchengxu/vista.vim'
 call plug#end()
 
 " auto indent
