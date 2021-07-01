@@ -17,7 +17,9 @@
                 "c",
                 "cpp",
                 "objc",
-                "objcpp"
+                "objcpp",
+		"h",
+		"cc"
             ],
             "rootPatterns": [
                 ".ccls",
