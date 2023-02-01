@@ -1,29 +1,19 @@
 # nvim configuration
 
-## install fuse
-
-```
- yum install fuse*
-```
-
 ## install nvim
+
+build from source
+
 ```
-chmod u+x nvim.appimage && ./nvim.appimage
-ln -s ./nvim.appimage /usr/bin/nvim
+make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/home/qing/nvim
 ```
 
-## install node
-```
-curl -sL https://rpm.nodesource.com/setup_15.x | sudo bash -
-sudo yum install -y nodejs
-npm install -g n
-n stable
-```
+Install [packer](https://github.com/neovim/nvim-lspconfig).
 
 ## install plugs
 Run following commands in nvim:
 ```
-:PlugInstall
+:PackerSync
 :GoUpdateBinaries
 ```
 
@@ -36,34 +26,19 @@ export PATH=$PATH:$(go env GOROOT)/bin
 export PATH=$PATH:$(go env GOPATH)/bin
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn
+```
 
+## install node
+```
+curl -sL https://rpm.nodesource.com/setup_15.x | sudo bash -
+sudo yum install -y nodejs
+npm install -g n
+n stable
 ```
 
 ## install language server
 
-### efm
-
-```
-go get github.com/mattn/efm-langserver
-```
-
-### ts/js and css
-
-In your vim/neovim, run command:
-```
-:CocInstall coc-tsserver
-:CocInstall coc-css
-```
-
-### Bash Language Server
-```
-npm i -g bash-language-server
-```
-
-### Python language server
-```
-:CocInstall coc-pyright
-```
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 
 ### ccls
 
