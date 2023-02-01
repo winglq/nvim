@@ -17,15 +17,20 @@ autocmd FileType html setlocal ts=2 sts=2 sw=2
 autocmd FileType ruby setlocal ts=2 sts=2 sw=2
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType python setlocal ts=4 sts=4 sw=4
-autocmd FileType cc setlocal tabstop=4 shiftwidth=4 expandtab
-autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd FileType cc setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType h setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType c setlocal tabstop=4 shiftwidth=2
 
 " color
 
 set t_Co=256
+"colorscheme darkblue
 colorscheme solarized
+let g:rehash256 = 1
+let g:molokai_original = 1
 set colorcolumn=80
 set background=light
+"set background=dark
 
 " line number
 set relativenumber

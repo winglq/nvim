@@ -60,6 +60,11 @@ In your vim/neovim, run command:
 npm i -g bash-language-server
 ```
 
+### Python language server
+```
+:CocInstall coc-pyright
+```
+
 ### ccls
 
 ```
