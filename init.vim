@@ -2,6 +2,8 @@ colorscheme solarized
 set background=light
 
 autocmd FileType cpp setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType sql setlocal tabstop=2 shiftwidth=2 expandtab
+
 
 " line number
 set relativenumber
