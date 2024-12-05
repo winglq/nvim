@@ -8,7 +8,7 @@ build from source
 make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/home/qing/nvim
 ```
 
-Install [packer](https://github.com/neovim/nvim-lspconfig).
+Install [packer](https://github.com/wbthomason/packer.nvim).
 
 ## install plugs
 Run following commands in nvim:
