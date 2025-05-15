@@ -2,7 +2,7 @@
 
 ## install nvim
 
-build from source
+build from source, 如果使用snap装的话packer无法使用。
 
 ```
 make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/home/qing/nvim
@@ -48,6 +48,10 @@ sudo yum install snapd
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install ccls --classic
+```
+
+```
+apt install ccls
 ```
 
 ### update tmux
